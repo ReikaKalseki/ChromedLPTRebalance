@@ -4,11 +4,11 @@ using System;    //For data read/write methods
 using System.Collections.Generic;   //Working with Lists and Collections
 using System.Linq;   //More advanced manipulation of lists/collections
 using Harmony;
-using ReikaKalseki;
+using ReikaKalseki.FortressCore;
 
 namespace ReikaKalseki.ChromedLPTRebalance
 {
-  public class ChromedLPTRebalanceMod : FortressCraftMod
+  public class ChromedLPTRebalanceMod : FCoreMod
   {
     public const string MOD_KEY = "ReikaKalseki.ChromedLPTRebalance";
     public const string CUBE_KEY = "ReikaKalseki.ChromedLPTRebalance_Key";
@@ -22,6 +22,10 @@ namespace ReikaKalseki.ChromedLPTRebalance
     private const float CHROMED_GREEN_PPS = 180;
     private const float CHROMED_BLUE_PPS = 250;
     private const float CHROMED_PURPLE_PPS = 2000; //1600 in vanilla
+    
+    public ChromedLPTRebalanceMod() : base("ChromedLPTRebalance") {
+    	
+    }
 
     public override ModRegistrationData Register()
     {
@@ -37,9 +41,9 @@ namespace ReikaKalseki.ChromedLPTRebalance
         var harmony = HarmonyInstance.Create("ReikaKalseki.ChromedLPTRebalance");
         HarmonyInstance.DEBUG = true;
         FileLog.Log("Ran mod register, started harmony (harmony log)");
-        Debug.Log("Ran mod register, started harmony");
+        FUtil.log("Ran mod register, started harmony");
         try {
-			harmony.PatchAll();
+        	harmony.PatchAll(System.Reflection.Assembly.GetExecutingAssembly());
         }
         catch (Exception e) {
 			FileLog.Log("Caught exception when running patcher!");
