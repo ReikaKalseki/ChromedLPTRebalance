@@ -8,7 +8,7 @@ using ReikaKalseki.FortressCore;
 
 namespace ReikaKalseki.ChromedLPTRebalance
 {
-  public class ChromedLPTRebalanceMod : FCoreMod
+  public class ChromedLPTRebalanceMod : FortressCraftMod
   {
     public const string MOD_KEY = "ReikaKalseki.ChromedLPTRebalance";
     public const string CUBE_KEY = "ReikaKalseki.ChromedLPTRebalance_Key";
@@ -22,10 +22,6 @@ namespace ReikaKalseki.ChromedLPTRebalance
     private const float CHROMED_GREEN_PPS = 180;
     private const float CHROMED_BLUE_PPS = 250;
     private const float CHROMED_PURPLE_PPS = 2000; //1600 in vanilla
-    
-    public ChromedLPTRebalanceMod() : base("ChromedLPTRebalance") {
-    	
-    }
 
     public override ModRegistrationData Register()
     {

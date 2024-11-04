@@ -16,6 +16,7 @@ using System.Reflection.Emit;
 using System.Diagnostics;
 using Harmony;
 using UnityEngine;  //Needed for most Unity Enginer manipulations: Vectors, GameObjects, Audio, etc.
+using ReikaKalseki.FortressCore;
 
 namespace ReikaKalseki.ChromedLPTRebalance {
 	
@@ -47,7 +48,7 @@ namespace ReikaKalseki.ChromedLPTRebalance {
 				List<CodeInstruction> inject = new List<CodeInstruction>();
 				inject.Add(new CodeInstruction(OpCodes.Ldarg_0)); //this
 				inject.Add(new CodeInstruction(OpCodes.Ldarg_1)); //int tier
-				inject.Add(InstructionHandlers.createMethodCall("ReikaKalseki.ChromedLPTRebalance.ChromedLPTRebalanceMod", call, false, typeof(float), typeof(LaserPowerTransmitter), typeof(int)));
+				inject.Add(InstructionHandlers.createMethodCall(typeof(ChromedLPTRebalanceMod), call, false, typeof(float), typeof(LaserPowerTransmitter), typeof(int)));
 				FileLog.Log("Injecting "+inject.Count+" instructions: "+InstructionHandlers.toString(inject));
 				codes.InsertRange(loc, inject);
 				FileLog.Log("Done patch "+new StackFrame(1).GetMethod().Name);
