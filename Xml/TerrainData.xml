@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTerrainDataEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">	
+	<TerrainDataEntry>
+		<Key>GenericAssemblerMachine</Key>
+		<IsOverride>true</IsOverride>
+		<Values>
+			<ValueEntry>
+				<Key>ReikaKalseki.PerfectLensChromer</Key>
+				<Name>Perfect Lens Chromer</Name>
+				<IconName>ReikaKalseki.PerfectLensChromer</IconName>
+				<Description>A variant of the lens chromer tuned specifically for perfect lenses, using less chromium and working faster than the basic chromer by skipping polishing.</Description>
+			</ValueEntry>	
+			<ValueEntry>
+				<Key>ReikaKalseki.ExceptionalLensChromer</Key>
+				<Name>Exceptional Lens Chromer</Name>
+				<IconName>ReikaKalseki.ExceptionalLensChromer</IconName>
+				<Description>A variant of the lens chromer tuned specifically for exceptional lenses, using less chromium and working faster than the basic chromer by skipping polishing.</Description>
+			</ValueEntry>		
+		</Values>
+	</TerrainDataEntry>		
+</ArrayOfTerrainDataEntry>

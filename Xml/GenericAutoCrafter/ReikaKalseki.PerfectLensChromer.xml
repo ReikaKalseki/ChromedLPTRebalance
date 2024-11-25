@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GenericAutoCrafterDataEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<FriendlyName>Perfect Lens Chromer</FriendlyName>
+	<SpawnObject>LensChromer</SpawnObject>
+	<Value>ReikaKalseki.PerfectLensChromer</Value>
+			
+	<PowerUsePerSecond>80</PowerUsePerSecond>  <!-- optional -->
+	<PowerTransferPerSecond>1024</PowerTransferPerSecond>  <!-- optional -->
+	<MaxPowerStorage>1024</MaxPowerStorage>  <!-- optional -->
+	<CraftingString>Coating...</CraftingString>
+	
+	<CraftTime>200</CraftTime>  <!-- optional -->
+	<OptionalIngredients>false</OptionalIngredients>
+	<Recipe>
+		<Key>PolishedChromeLens_Key</Key>
+		<CraftedKey>PolishedChromeLens</CraftedKey>
+		<CraftedAmount>1</CraftedAmount>
+		<Costs>
+			<CraftCost>
+				<Key>OrganicLens</Key>
+				<Amount>1</Amount>
+			</CraftCost>
+			<CraftCost>
+				<Key>ChromiumBar</Key>
+				<Amount>3</Amount>
+			</CraftCost>
+		</Costs>
+		<Description>A variant of the lens chromer tuned specifically for perfect lenses, using less chromium and working faster than the basic chromer by skipping polishing.</Description>
+	</Recipe>
+</GenericAutoCrafterDataEntry>
