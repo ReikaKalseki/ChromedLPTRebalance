@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCraftData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CraftData>
+		<Key>ReikaKalseki.PerfectLensChromer</Key>
+		<Category>powertransmission</Category>
+		<Tier>2</Tier>
+		<CraftedKey>ReikaKalseki.PerfectLensChromer</CraftedKey>
+		<CraftedAmount>1</CraftedAmount>
+		<Costs>
+		<CraftCost>
+			<Key>ImbuedMachineBlock</Key>
+			<Amount>1</Amount>
+		</CraftCost>
+		<CraftCost>
+			<Key>OverclockedCrystalClock</Key>
+			<Amount>5</Amount>
+		</CraftCost>
+		</Costs>
+		<Description>A variant of the lens chromer tuned specifically for perfect lenses, using less chromium and working faster than the basic chromer by skipping polishing.</Description>
+		<ResearchRequirements>
+			<Research>advancedcrystal</Research>
+			<Research>T4_GTPower</Research>
+		</ResearchRequirements>
+		<ScanRequirements>
+			<Scan>LensChromer</Scan>
+		</ScanRequirements>
+		<ResearchCost>5</ResearchCost>
+	</CraftData>
+	<CraftData>
+		<Key>ReikaKalseki.ExceptionalLensChromer</Key>
+		<Category>powertransmission</Category>
+		<Tier>2</Tier>
+		<CraftedKey>ReikaKalseki.ExceptionalLensChromer</CraftedKey>
+		<CraftedAmount>1</CraftedAmount>
+		<Costs>
+		<CraftCost>
+			<Key>ImbuedMachineBlock</Key>
+			<Amount>2</Amount>
+		</CraftCost>
+		<CraftCost>
+			<Key>OverclockedCrystalClock</Key>
+			<Amount>5</Amount>
+		</CraftCost>
+		</Costs>
+		<Description>A variant of the lens chromer tuned specifically for exceptional lenses, using less chromium and working faster than the basic chromer by skipping polishing.</Description>
+		<ResearchRequirements>
+			<Research>advancedcrystal</Research>
+			<Research>T4_GTPower</Research>
+		</ResearchRequirements>
+		<ScanRequirements>
+			<Scan>LensChromer</Scan>
+		</ScanRequirements>
+		<ResearchCost>5</ResearchCost>
+	</CraftData>
+</ArrayOfCraftData>	
