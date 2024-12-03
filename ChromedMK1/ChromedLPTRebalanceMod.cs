@@ -27,20 +27,8 @@ namespace ReikaKalseki.ChromedLPTRebalance
     	
     }
 
-    public override ModRegistrationData Register()
-    {
-        ModRegistrationData registrationData = new ModRegistrationData();
-        //registrationData.RegisterEntityHandler(MOD_KEY);
-        /*
-        TerrainDataEntry entry;
-        TerrainDataValueEntry valueEntry;
-        TerrainData.GetCubeByKey(CUBE_KEY, out entry, out valueEntry);
-        if (entry != null)
-          ModCubeType = entry.CubeType;
-         */        
-       runHarmony();
-        
-        return registrationData;
+    protected override void loadMod(ModRegistrationData registrationData) {
+       	runHarmony();
     }
     
     private static float calculateNeededBonus(float baseGen, float target) {
